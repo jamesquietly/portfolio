@@ -1,0 +1,49 @@
+.nav a {
+    background-color: rgb(30, 60, 255);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.nav {
+    background-color: lightblue;
+}
+
+.projects div {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+
+.shadow_images {
+    width: 100%;
+    height: 100%;
+}
+
+
+.text {
+    border-style: solid;
+    width:75%;
+    height:75%;
+}
+
+.text_pic {
+    border-style: solid;
+    width: 75%;
+}
+
+div > a {
+    background-color: rgb(77, 170, 210);
+    font-size: 20px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+* {
+    margin: auto;
+    color: white;
+    text-align: center; 
+    background-color: black;
+}

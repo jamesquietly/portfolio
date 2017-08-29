@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Haunter's Candy Hunt</title>
+  <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+</head>
+<body>
+  <div class="contact">
+    <h1>James Ly</h1>
+    <h2 class="email">Email: jamesquietly@gmail.com</h2>
+    <h2 class="phone">Phone: 626-428-9171</h2>
+  </div>
+  <div class="nav">
+    <a href="../index.html">Back to Projects</a>
+    <a href="https://github.com/jamesquietly" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/jamesly3/" target="_blank">Linkedin</a>
+  </div>
+
+  <div class="opening">
+    <img src="../images/main.jpg" width=50% height=50%><br />
+    <h1>Video Demo</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ddLDYoN6Kuc" frameborder="0" allowfullscreen></iframe><br />
+  </div>
+
+  <div class="text">
+    <h1>Introduction</h1>
+    <p>Rare candy is hard to come by in the Pokemon world, but Haunter seems to have found a forest full of them. You can play as Haunter in this simple game and collect as much candy as you want! This is written in C++ and OpenGL.</p>
+  </div>
+
+  <div class="text">
+    <h1>Controls</h1>
+    <p>
+      <li>WASD to move</li>
+      <li>Arrow keys to move camera location</li>
+      <li>Mouse scrolling to rotate/look around</li>
+      <li>T to change/respawn tree locations</li>
+      <li>C to change/respawn candy location</li>
+    </p>
+  </div>
+
+  <div class="text">
+    <h1>Features</h1>
+    <p>
+      <li>Hierarchical Models</li>
+      <li>Collision Detection</li>
+      <li>Camera Control</li>
+      <li>Textures</li>
+      <li>Skybox</li>
+    </p>
+  </div>
+
+  <div class="text">
+    <h1>Collision Detection</h1>
+    <p>Collision Detection is being implemented by calculating the distances between Haunter and the other objects in the world. If the distance between Haunter and the other object is less than the sum of their bounding sphere's radius, then we have a collision. I am using this to check if Haunter is colliding with the tree or candy. The candy will respawn at a differnt location once it collides with Haunter. Haunter is not able to pass through the trees, but he is free to float off the map or ground plane.</p>
+  </div>
+
+  <div class="text">
+    <h1>Camera Control</h1>
+    <p>The camera is free floating and can move around separately from Haunter. You can use the arrow keys to move the camera forward, backward, left, or right. You can also use mouse scrolling to look around the world.</p>
+  </div>
+
+  <div class="text_pic">
+    <h1>Textures</h1>
+    <p>I was not able to get the original textures that came with the obj files. However, I did end up finding some textures that made the models look as close to the original as possible.</p>
+    <img src="../images/texture.jpg" width=75% height=75%>
+  </div>
+
+  <div class="text_pic">
+    <h1>Skybox</h1>
+    <p>Skybox added a little more visual appeal to the simple game. The idea is that the skybox is a cube with textures on each side of the cube. The camera is centered inside the cube so when you look around you can see the different textures on each side of the cube. In this game, I went for a cloud textures to simluate a sky.</p>
+    <img src="../images/sky.jpg" width=75% height=75%>
+  </div>
+
+
+  <div class="text">
+    <h1>Lesson Learned</h1>
+    <p>The hardest part when starting the project was getting the obj files and textures to load correctly. At first I was only able to see the eyes of the Pokemon models, so I thought I would be able to animate them once I am able to load the rest of the shapes. Turns out there were only two shapes, the eyes and the rest of the body. So that made that it difficult to try to animate the model. The main lesson I learned from this project was how to implement collision detection and skyboxes.</p>
+  </div>
+
+  <div class="text">
+    <h1>Resources</h1>
+    <p>
+      <li><a href="https://www.models-resource.com/wii/pokeparkwiipikachusadventure/model/2556/">Haunter Model</a></li>
+      <li><a href="https://www.models-resource.com/wii/kirbysreturntodreamland/model/4572/">Candy Model</a></li>
+      <li><a href="http://tf3dm.com/3d-model/tree-001-2539.html">Tree</a></li>
+      <li><a href="http://www.custommapmakers.org/skyboxes.php">Skybox textures</a></li>
+    </p>
+  </div>
+
+</body>
+</html>
