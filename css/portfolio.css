@@ -41,6 +41,7 @@
 div > a {
     background-color: rgb(77, 170, 210);
     font-size: 20px;
+    text-decoration: none;
 }
 
 div > a:hover {
