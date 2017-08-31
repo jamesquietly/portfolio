@@ -20,6 +20,10 @@
     display: inline-block;
 }
 
+.description {
+    background-color: rgb(200, 200, 200);
+}
+
 
 .shadow_images {
     width: 100%;
