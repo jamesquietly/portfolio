@@ -110,10 +110,7 @@ header .email, header .phone {
 /* -- PROJECT LINKS --- */
 .projects ul, .project ul {
     list-style: none;
-}
-
-.projects ul {
-    margin-left: 25%;
+    text-align: center;
 }
 
 .projects li, .nav li {
@@ -200,9 +197,6 @@ header .email, header .phone {
     text-align: center;
 }
 
-.project ul {
-    margin-left: 43%;
-}
 
 /* --------- WEB DEV ------ */
 .web-dev-projects .projects {
