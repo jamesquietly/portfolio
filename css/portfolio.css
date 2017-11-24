@@ -113,7 +113,7 @@ header .email, header .phone {
 }
 
 .projects ul {
-    margin-left: 15%;
+    margin-left: 25%;
 }
 
 .projects li, .nav li {
@@ -174,18 +174,17 @@ header .email, header .phone {
 }
 
 .projects p, .project p {
-    word-spacing: 1%;
     line-height: 145%;
-    text-align: justify;
-
+    letter-spacing: 1%;
 }
 
 .projects p {
-    padding: 1% 5% 3% 5%;
+    padding: 1% 4%;
+    text-align: justify;
 }
 
 .cp-projects, .web-dev-projects {
-    padding: 0 20%;
+    padding: 0 8%;
 }
 
 
@@ -197,11 +196,12 @@ header .email, header .phone {
 
 /* ---- ASTRO JUMP SINGLE ROW --- */
 .project p {
-    padding: 0 5% 1% 5%;
+    padding: 1% 6%;
+    text-align: center;
 }
 
 .project ul {
-    margin-left: 41%;
+    margin-left: 43%;
 }
 
 /* --------- WEB DEV ------ */
