@@ -2,98 +2,133 @@
 <html>
   <head>
     <title>James Ly's Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/portfolio.css">
   </head>
   <body>
-    <div class="container-fluid text-center">
+      <header>
       <div class="contact">
         <h1>James Ly</h1>
-        <h2 class="email">Email: jamesquietly@gmail.com</h2>
-        <h2 class="phone">Phone: 626-428-9171</h2>
+        <h2 class="email">Email: <a href="mailto:jamesquietly@gmail.com">jamesquietly@gmail.com</a></h2>
+        <h2 class="phone">Phone: <a href="tel:+1-626-428-9171">626-428-9171</a></h2>
       </div>
       <div class="nav">
-        <a class="btn btn-primary" href="index.html">Projects</a>
-        <a class="btn btn-primary" href="https://github.com/jamesquietly" target="_blank">GitHub</a>
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/jamesly3/" target="_blank">Linkedin</a>
+        <ul>
+          <li><a  href="index.html"><i class="ion-ios-folder nav-icon"></i>Projects</a></li>
+          <li><a  href="https://github.com/jamesquietly" target="_blank"><i class="ion-social-github nav-icon"></i>GitHub</a></li>
+          <li><a  href="https://www.linkedin.com/in/jamesly3/" target="_blank"><i class="ion-social-linkedin nav-icon"></i>Linkedin</a></li>
+        </ul>
       </div>
+      </header>
 
-      <h1>Projects</h1>
-      <div class="row">
-        <div class="col-md-6 projects">
-          <h2>Ray Tracer</h2>
-          <h3>Description:</h3>
-          <p>A ray tracer sends rays into the world in order to determine what color each pixel needs to be rendered in our view. This generates a static image based on the input. Written in C++</p>
-          <a class="btn btn-primary" href="html/raytracer.html">Full Description</a>
-          <a class="btn btn-primary" href="https://github.com/jamesquietly/cpe473/tree/master/prog1" target="_blank">Code on GitHub</a>
-        </div>
+      <section class="cp-projects">
+        <h2>Projects</h2>
+        <div class="row">
+          <div class="col span-1-of-2 projects">
+            <h3>Ray Tracer</h3>
+            <p>A ray tracer sends rays into the world in order to determine what color each pixel needs to be rendered in our view. This generates a static image based on a POV file input. Written in C++</p>
+            <ul>
+              <li><a class="btn btn-primary" href="html/raytracer.html">Full Description</a></li>
+              <li><a class="btn btn-primary" href="https://github.com/jamesquietly/cpe473/tree/master/prog1" target="_blank">Code on GitHub</a></li>
+            </ul>
+          </div>
 
-        <div class="col-md-6 projects">
-          <h2>Haunter's Candy Hunt</h2>
-          <h3>Description:</h3>
-          <p>A simple 3D game where you can play as Haunter and collect rare candy. The candy spawns in random locations and there are trees that you can't pass through. Writtern in C++ and OpenGL</p>
-          <a class="btn btn-primary" href="html/hauntergame.html">Full Description</a>
-        </div>
-
-        <div class="col-md-12 projects">
-          <h2>AstroJump</h2>
-          <h3>Description:</h3>
-          <p>A platform jumping game where you must keep jumping upwards on platforms to avoid falling into the rising lava.</p>
-          <a class="btn btn-primary" href="https://github.com/jamesquietly/AstroJump" target="_blank">Code on GitHub</a>
-        </div>
-      </div>
-
-      <h1>Web Dev Projects</h1>
-      <div class="row">
-        <div class="col-md-6 projects">
-          <h2>Youtube Player</h2>
-          <p>User can search through the Youtube API and pick from a list of videos. Uses React framework.<br/></p>
-          <a class="btn btn-primary" href="https://jamesquietly.github.io/youtube-player/" target="_blank">Visit the site</a>
-          <a class="btn btn-primary" href="https://github.com/jamesquietly/youtube-player" target="_blank">Code on GitHub</a>
-        </div>
-
-        <div class="col-md-6 projects">
-          <h2>Weather Forecast</h2>
-          <p>Searches through the DarkSky API to get the weather forecast. Uses React framework.<br/></p>
-          <a class="btn btn-primary" href="https://jamesquietly.github.io/DarkSkyReact/" target="_blank">Visit the site</a>
-          <a class="btn btn-primary" href="https://github.com/jamesquietly/DarkSkyReact" target="_blank">Code on GitHub</a>
-        </div>
-
-        <div class="col-md-6 projects">
-          <h2>Blogger</h2>
-          <p>A blog website where you can create, edit, and delete your own articles. Uses Ruby on Rails.<br/></p>
-          <a class="btn btn-primary" href="https://pure-lowlands-31128.herokuapp.com" target="_blank">Visit the site</a>
-          <a class="btn btn-primary" href="https://github.com/jamesquietly/blogger" target="_blank">Code on GitHub</a>
-        </div>
-
-        <div class="col-md-6 projects">
-          <h2>Pomodoro Clock</h2>
-          <p>Clock that switches between work and break time in order to visualize the pomodoro technique.</p>
-          <a class="btn btn-primary" href="https://jamesquietly.github.io/pomodoro-clock/" target="_blank">Visit the site</a>
-          <a class="btn btn-primary" href="https://github.com/jamesquietly/pomodoro-clock" target="_blank">Code on GitHub</a>
+          <div class="col span-1-of-2 projects">
+            <h3>Haunter's Candy Hunt</h3>
+            <p>A 3D game where you can play as Haunter and collect rare candy. The candy spawns in random locations and there are trees that you can't pass through. Writtern in C++ and OpenGL</p>
+            <ul>
+              <li><a class="btn btn-primary" href="html/hauntergame.html">Full Description</a></li>
+            </ul>
+          </div>
         </div>
         
-        <div class="col-md-6 projects">
-          <h2>Random Quotes</h2>
-          <p>Displays random quotes at a touch of a button.</p>
-          <a class="btn btn-primary" href="https://jamesquietly.github.io/RandomQuotes/" target="_blank">Visit the site</a>
-          <a class="btn btn-primary" href="https://github.com/jamesquietly/RandomQuotes" target="_blank">Code on GitHub</a>
+        <div class="row">
+          <div class="project">
+            <h3>AstroJump</h3>
+            <p>A platform jumping game where you must keep jumping upwards on platforms to avoid falling into the rising lava.</p>
+            <ul>
+              <li><a class="btn btn-primary" href="https://github.com/jamesquietly/AstroJump" target="_blank">Code on GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="web-dev-projects">
+        <h2>Web Dev Projects</h2>
+        <div class="row">
+          <div class="col span-1-of-2 projects">
+            <h3>Youtube Player</h3>
+            <p>User can search through the Youtube API and pick from a list of videos. Uses React framework.</p>
+            <ul>
+              <li><a class="btn btn-primary" href="https://jamesquietly.github.io/youtube-player/" target="_blank">Visit the site</a></li>
+              <li><a class="btn btn-primary" href="https://github.com/jamesquietly/youtube-player" target="_blank">Code on GitHub</a></li>
+            </ul>
+          </div>
+
+          <div class="col span-1-of-2 projects">
+            <h3>Weather Forecast</h3>
+            <p>Searches through the DarkSky API to get the weather forecast. Uses React framework.</p>
+            <ul>
+              <li><a class="btn btn-primary" href="https://jamesquietly.github.io/DarkSkyReact/" target="_blank">Visit the site</a></li>
+              <li><a class="btn btn-primary" href="https://github.com/jamesquietly/DarkSkyReact" target="_blank">Code on GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col span-1-of-2 projects">
+            <h3>Blogger</h3>
+            <p>A blog website where you can create, edit, and delete your own articles. Uses Ruby on Rails.</p>
+            <ul>
+              <li><a class="btn btn-primary" href="https://pure-lowlands-31128.herokuapp.com" target="_blank">Visit the site</a></li>
+              <li><a class="btn btn-primary" href="https://github.com/jamesquietly/blogger" target="_blank">Code on GitHub</a></li>
+            </ul>
+          </div>
+      
+          <div class="col span-1-of-2 projects">
+            <h3>Pomodoro Clock</h3>
+            <p>Clock that switches between work and break time in order to visualize the pomodoro technique.</p>
+            <ul>
+              <li><a class="btn btn-primary" href="https://jamesquietly.github.io/pomodoro-clock/" target="_blank">Visit the site</a></li>
+              <li><a class="btn btn-primary" href="https://github.com/jamesquietly/pomodoro-clock" target="_blank">Code on GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+          
+        <div class="row">
+          <div class="col span-1-of-2 projects">
+            <h3>Random Quotes</h3>
+            <p>Displays random quotes at a touch of a button.</p>
+            <ul>
+              <li><a class="btn btn-primary" href="https://jamesquietly.github.io/RandomQuotes/" target="_blank">Visit the site</a></li>
+              <li><a class="btn btn-primary" href="https://github.com/jamesquietly/RandomQuotes" target="_blank">Code on GitHub</a></li>
+            </ul>
+          </div>
+          
+          <div class="col span-1-of-2 projects">
+            <h3>Wiki Viewer</h3>
+            <p>Site that searches through wikipedia API</p>
+            <ul>
+              <li><a class="btn btn-primary" href="https://jamesquietly.github.io/WikiViewer/" target="_blank">Visit the site</a></li>
+              <li><a class="btn btn-primary" href="https://github.com/jamesquietly/WikiViewer" target="_blank">Code on GitHub</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div class="col-md-6 projects">
-          <h2>Wiki Viewer</h2>
-          <p>site that uses wikipedia API and displays results from it</p>
-          <a class="btn btn-primary" href="https://jamesquietly.github.io/WikiViewer/" target="_blank">Visit the site</a>
-          <a class="btn btn-primary" href="https://github.com/jamesquietly/WikiViewer" target="_blank">Code on GitHub</a>
+        <div class="row">
+          <div class="col span-1-of-2 projects">
+            <h3>Twitch Status Viewer</h3>
+            <p>Site that uses twitch tv API and displays stream statuses</p>
+            <ul>
+              <li><a class="btn btn-primary" href="https://jamesquietly.github.io/TwitchtvAPI/" target="_blank">Visit the site</a></li>
+              <li><a class="btn btn-primary" href="https://github.com/jamesquietly/TwitchtvAPI" target="_blank">Code on GitHub</a></li>
+            </ul>
+          </div>
         </div>
+      </section>
 
-        <div class="col-md-6 projects">
-          <h2>Twitch Status Viewer</h2>
-          <p>Site that uses twitch tv API and displays stream statuses</p>
-          <a class="btn btn-primary" href="https://jamesquietly.github.io/TwitchtvAPI/" target="_blank">Visit the site</a>
-          <a class="btn btn-primary" href="https://github.com/jamesquietly/TwitchtvAPI" target="_blank">Code on GitHub</a>
-        </div>
-      </div>
-    </div>
   </body>
 </html>

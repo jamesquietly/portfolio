@@ -2,34 +2,39 @@
 <html>
   <head>
     <title>Ray Tracer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/grid.css">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
   </head>
   <body>
-    <div class="container-fluid text-center">
+
+    <header>
       <div class="contact">
         <h1>James Ly</h1>
-        <h2 class="email">Email: jamesquietly@gmail.com</h2>
-        <h2 class="phone">Phone: 626-428-9171</h2>
-      </div>
-      <div class="nav">
-        <a class="btn btn-primary" href="../index.html">Back to Projects</a>
-        <a class="btn btn-primary" href="https://github.com/jamesquietly" target="_blank">GitHub</a>
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/jamesly3/" target="_blank">Linkedin</a>
+        <h2 class="email">Email: <a href="mailto:jamesquietly@gmail.com">jamesquietly@gmail.com</a></h2>
+        <h2 class="phone">Phone: <a href="tel:+1-626-428-9171">626-428-9171</a></h2>
       </div>
 
-      <div class="ray-description">
-        <div>
-          <h1>Ray Tracer</h1>
-          <h2>Description:</h2>
+      <div class="nav">
+        <ul>
+          <li><a href="../index.html"><i class="ion-ios-folder nav-icon"></i>Projects</a></li>
+          <li><a href="https://github.com/jamesquietly" target="_blank"><i class="ion-social-github nav-icon"></i>GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/jamesly3/" target="_blank"><i class="ion-social-linkedin nav-icon"></i>Linkedin</a></li>
+        </ul>
+      </div>
+    </header>
+
+      <section class="ray-description">
+          <h2>Ray Tracer</h2>
+          <h3>Description:</h3>
           <p>A ray tracer starts from the camera's point of view and sends rays out into the world to see if it hits anything. If the ray hits something, we can determine the color based on the object's color, material, and reflectiveness. In this ray tracer, our input file is a POV ray file. This type of file contains info about the camera and other objects like geometric shapes. The output of the ray tracer is a static image based on the POV file and command line arguments. This program was written in C++ with the GLM library.</p>
           <a class="btn btn-primary" href="https://github.com/jamesquietly/cpe473/tree/master/prog1" target="_blank">Code on GitHub</a>
           <p>For the final addition to the ray tracer, I decided to do soft shadows. The concept is to treat our point lights as an area light in order to send multiple shadow feeler rays with that area light. After getting the color from those samples we can average them to get softer shadows.</p>
+      </section>
 
-        </div>
-      </div>
-
-      <div class="shadow_images">
+      <section class="shadow_images">
         <p>Here are some output images of soft shadows. The left side does not have soft shadows. The right side does have soft shadows.</p>
         <img class="shadow-images" src="../images/simple-gi.png" width="45%">
         <img class="shadow-images" src="../images/simple-gi-soft.png" width="45%">
@@ -37,25 +42,26 @@
         <img class="shadow-images" src="../images/final_box-soft.png" width="45%">
         <img class="shadow-images" src="../images/final_trees.png" width="45%">
         <img class="shadow-images" src="../images/final_trees-soft.png" width="45%">
-      </div>
+      </section>
 
-      <div class="other_features">
+      <section class="other_features">
         <h2>Other working features:</h2>
-        <p>
+        <ul>
           <li>Spheres, triangles, planes, boxes</li>
           <li>Reflection and Refraction</li>
           <li>Monte Carlo Global Illumination</li>
           <li>Blinn-Phong and Cook-Torrance Shading</li>
           <li>Anti-Aliasing</li>
           <li>Transformations</li>
-        </p>
-      </div>
+        </ul>
+      </section>
 
-      <h2>References:</h2>
-      <p>
-        <li> Ian Dunn</li>
-        <li> <a href="https://www.cs.unc.edu/~dm/UNC/COMP236/LECTURES/SoftShadows.pdf">https://www.cs.unc.edu/~dm/UNC/COMP236/LECTURES/SoftShadows.pdf</a>
-      </p>
-    </div>
+      <section class="references">
+        <h2>References:</h2>
+        <ul>
+          <li>Ian Dunn</li>
+          <li><a href="https://www.cs.unc.edu/~dm/UNC/COMP236/LECTURES/SoftShadows.pdf">https://www.cs.unc.edu/~dm/UNC/COMP236/LECTURES/SoftShadows.pdf</a></li>
+        </ul>
+      </section>
   </body>
 </html>
