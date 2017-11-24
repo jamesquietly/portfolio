@@ -251,6 +251,10 @@ header .email, header .phone {
     margin-bottom: 5%;
 }
 
+.shadow_images p {
+    margin-bottom: 1%;
+}
+
 .other_features, .references {
     line-height: 145%;
 }
