@@ -74,7 +74,7 @@ header .email, header .phone {
 
 .nav a:link, .nav a:visited {
     text-decoration: none;
-    font-size: 150%;
+    font-size: 120%;
     background-color: #3578ff;
     color: #fff;
     padding: 10px 20px;
@@ -113,7 +113,7 @@ header .email, header .phone {
 }
 
 .projects ul {
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 .projects li, .nav li {
@@ -127,7 +127,8 @@ header .email, header .phone {
     display: inline-block;
     border: 1px solid #9ebeff;
     border-radius: 200px;
-    padding: 10px 20px;
+    padding: 5px 10px;
+    font-size: 85%;
     text-decoration: none;
     font-weight: 300;
     color: #fff;
@@ -200,7 +201,7 @@ header .email, header .phone {
 }
 
 .project ul {
-    margin-left: 42%;
+    margin-left: 41%;
 }
 
 /* --------- WEB DEV ------ */
