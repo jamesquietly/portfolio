@@ -113,7 +113,7 @@ header .email, header .phone {
     text-align: center;
 }
 
-.projects li, .nav li {
+.projects li, .nav li, .project li {
     display: inline-block;
 }
 
@@ -171,6 +171,12 @@ header .email, header .phone {
     padding-bottom: 2%;
     border-bottom: 2px solid #cecece;
     margin-bottom: 2%;
+}
+
+.project h3 {
+    padding-bottom: 1%;
+    margin-bottom: 0;
+
 }
 
 .projects, .project {
