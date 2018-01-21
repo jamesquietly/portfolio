@@ -1,0 +1,29 @@
+.nav {
+    margin: 2rem 0;
+    background-color: $color-grey-dark-2;
+    
+    &__list {
+        list-style: none;
+        text-align: center;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            font-size: 2rem;
+        }
+    }
+
+    &__icon {
+        margin-right: .5rem;
+    }
+}

@@ -1,102 +1,98 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Haunter's Candy Hunt</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="../css/grid.css">
-  <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
-  <link rel="stylesheet" type="text/css" href="../css/queries.css">
-</head>
-<body>
-    <header>
-      <div class="contact">
-        <h1>James Ly</h1>
-        <h2 class="email">Email: <a href="mailto:jamesquietly@gmail.com">jamesquietly@gmail.com</a></h2>
-        <h2 class="phone">Phone: <a href="tel:+1-626-428-9171">626-428-9171</a></h2>
-      </div>
-      <div class="nav">
-        <ul>
-          <li><a href="../index.html"><i class="ion-ios-folder nav-icon"></i>Projects</a></li>
-          <li><a href="https://github.com/jamesquietly" target="_blank"><i class="ion-social-github nav-icon"></i>GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/jamesly3/" target="_blank"><i class="ion-social-linkedin nav-icon"></i>Linkedin</a></li>
-        </ul>
+  <head>
+    <title>Haunter's Candy Hunt</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="contact u-center-text">
+        <h1 class="contact__name">James Ly</h1>
+          <h2 class="contact__email">Email: <a class="contact__link" href="mailto:jamesquietly@gmail.com">jamesquietly@gmail.com</a></h2>
+          <h2 class="contact__phone">Phone: <a class="contact__link" href="tel:+1-626-428-9171">626-428-9171</a></h2>
       </div>
     </header>
-
-    <section class="opening">
-      <img src="../images/main.jpg" width=50% height=50%><br />
-      <h2>Video Demo</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ddLDYoN6Kuc" frameborder="0" allowfullscreen></iframe><br />
-    </section>
-
-    <section class="features">
-      <div class="text">
-        <h2>Introduction</h2>
-        <p>Rare candy is hard to come by in the Pokemon world, but Haunter seems to have found a forest full of them. You can play as Haunter in this simple game and collect as much candy as you want! This is written in C++ and OpenGL.</p>
-      </div>
-
-      <div class="text controls">
-        <h2>Controls</h2>
-        <ul>
-          <li><i class="ion-chevron-right list-icon"></i>WASD to move</li>
-          <li><i class="ion-chevron-right list-icon"></i>Arrow keys to move camera location</li>
-          <li><i class="ion-chevron-right list-icon"></i>Mouse scrolling to rotate/look around</li>
-          <li><i class="ion-chevron-right list-icon"></i>T to change/respawn tree locations</li>
-          <li><i class="ion-chevron-right list-icon"></i>C to change/respawn candy location</li>
+    
+    <main>
+      <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link btn btn--blue" href="../index.html"><i class="ion-ios-folder nav__icon"></i>Projects</a></li>
+            <li class="nav__item"><a class="nav__link btn btn--blue" href="https://github.com/jamesquietly" target="_blank"><i class="ion-social-github nav__icon"></i>GitHub</a></li>
+            <li class="nav__item"><a class="nav__link btn btn--blue" href="https://www.linkedin.com/in/jamesly3/" target="_blank"><i class="ion-social-linkedin nav__icon"></i>Linkedin</a></li>
         </ul>
-      </div>
+      </nav>
+      <section class="haunter-opening u-center-text">
+        <img class="haunter-opening__img" src="../images/main.jpg" width=50% height=50%>
+        <h2 class="heading-secondary">Video Demo</h2>
+        <iframe class="haunter-opening__video" width="560" height="315" src="https://www.youtube.com/embed/ddLDYoN6Kuc" frameborder="0" allowfullscreen></iframe>
+      </section>
 
-      <div class="text graphics-features">
-        <h2>Features</h2>
-        <ul>
-          <li><i class="ion-chevron-right list-icon"></i>Hierarchical Models</li>
-          <li><i class="ion-chevron-right list-icon"></i>Collision Detection</li>
-          <li><i class="ion-chevron-right list-icon"></i>Camera Control</li>
-          <li><i class="ion-chevron-right list-icon"></i>Textures</li>
-          <li><i class="ion-chevron-right list-icon"></i>Skybox</li>
+      <section class="haunter-intro haunter-info u-center-text">
+        <h2 class="heading-secondary">Introduction</h2>
+        <p class="haunter__paragraph">Rare candy is hard to come by in the Pokemon world, but Haunter seems to have found a forest full of them. You can play as Haunter in this simple game and collect as much candy as you want! This is written in C++ and OpenGL.</p>
+      </section>
+
+      <section class="haunter-controls haunter-info u-center-text">
+        <h2 class="heading-secondary">Controls</h2>
+        <ul class="haunter__list">
+          <li class="haunter__item"><i class="ion-chevron-right list-icon"></i>WASD to move</li>
+          <li class="haunter__item"><i class="ion-chevron-right list-icon"></i>Arrow keys to move camera location</li>
+          <li class="haunter__item"><i class="ion-chevron-right list-icon"></i>Mouse scrolling to rotate/look around</li>
+          <li class="haunter__item"><i class="ion-chevron-right list-icon"></i>T to change/respawn tree locations</li>
+          <li class="haunter__item"><i class="ion-chevron-right list-icon"></i>C to change/respawn candy location</li>
         </ul>
-      </div>
+      </section>
 
-      <div class="text collision">
-        <h2>Collision Detection</h2>
-        <p>Collision Detection is being implemented by calculating the distances between Haunter and the other objects in the world. If the distance between Haunter and the other object is less than the sum of their bounding sphere's radius, then we have a collision. I am using this to check if Haunter is colliding with the tree or candy. The candy will respawn at a differnt location once it collides with Haunter. Haunter is not able to pass through the trees, but he is free to float off the map or ground plane.</p>
-      </div>
+      <section class="haunter-features haunter-info u-center-text">
+        <h2 class="heading-secondary">Features</h2>
+        <ul class="haunter__list">
+          <li class="haunter__item"><i class="ion-chevron-right list-icon"></i>Hierarchical Models</li>
+          <li class="haunter__item"><i class="ion-chevron-right list-icon"></i>Collision Detection</li>
+          <li class="haunter__item"><i class="ion-chevron-right list-icon"></i>Camera Control</li>
+          <li class="haunter__item"><i class="ion-chevron-right list-icon"></i>Textures</li>
+          <li class="haunter__item"><i class="ion-chevron-right list-icon"></i>Skybox</li>
+        </ul>
+      </section>
 
-      <div class="text camera">
-        <h2>Camera Control</h2>
-        <p>The camera is free floating and can move around separately from Haunter. You can use the arrow keys to move the camera forward, backward, left, or right. You can also use mouse scrolling to look around the world.</p>
-      </div>
+      <section class="haunter-collision haunter-info u-center-text">
+        <h2 class="heading-secondary">Collision Detection</h2>
+        <p class="haunter__paragraph">Collision Detection is being implemented by calculating the distances between Haunter and the other objects in the world. If the distance between Haunter and the other object is less than the sum of their bounding sphere's radius, then we have a collision. I am using this to check if Haunter is colliding with the tree or candy. The candy will respawn at a differnt location once it collides with Haunter. Haunter is not able to pass through the trees, but he is free to float off the map or ground plane.</p>
+      </section>
 
-      <div class="text textures">
-        <h2>Textures</h2>
-        <p>I was not able to get the original textures that came with the obj files. However, I did end up finding some textures that made the models look as close to the original as possible.</p>
+      <section class="haunter-camera haunter-info u-center-text">
+        <h2 class="heading-secondary">Camera Control</h2>
+        <p class="haunter__paragraph">The camera is free floating and can move around separately from Haunter. You can use the arrow keys to move the camera forward, backward, left, or right. You can also use mouse scrolling to look around the world.</p>
+      </section>
+
+      <section class="haunter-textures haunter-info u-center-text">
+        <h2 class="heading-secondary">Textures</h2>
+        <p class="haunter__paragraph">I was not able to get the original textures that came with the obj files. However, I did end up finding some textures that made the models look as close to the original as possible.</p>
         <img src="../images/texture.jpg" width=75% height=75%>
-      </div>
+      </section>
 
-      <div class="text skybox">
-        <h2>Skybox</h2>
-        <p>Skybox added a little more visual appeal to the simple game. The idea is that the skybox is a cube with textures on each side of the cube. The camera is centered inside the cube so when you look around you can see the different textures on each side of the cube. In this game, I went for a cloud textures to simluate a sky.</p>
-        <img src="../images/sky.jpg" width=75% height=75%>
-      </div>
+      <section class="haunter-skybox haunter-info u-center-text">
+        <h2 class="heading-secondary">Skybox</h2>
+        <p class="haunter__paragraph">Skybox added a little more visual appeal to the simple game. The idea is that the skybox is a cube with textures on each side of the cube. The camera is centered inside the cube so when you look around you can see the different textures on each side of the cube. In this game, I went for a cloud textures to simluate a sky.</p>
+        <img src="../images/sky.jpg" width=50% height=50%>
+      </section>
 
 
-      <div class="text lessons">
-        <h2>Lesson Learned</h2>
-        <p>The hardest part when starting the project was getting the obj files and textures to load correctly. At first I was only able to see the eyes of the Pokemon models, so I thought I would be able to animate them once I am able to load the rest of the shapes. Turns out there were only two shapes, the eyes and the rest of the body. So that made that it difficult to try to animate the model. The main lesson I learned from this project was how to implement collision detection and skyboxes.</p>
-      </div>
+      <section class="haunter-lessons haunter-info u-center-text">
+        <h2 class="heading-secondary">Lesson Learned</h2>
+        <p class="haunter__paragraph">The hardest part when starting the project was getting the obj files and textures to load correctly. At first I was only able to see the eyes of the Pokemon models, so I thought I would be able to animate them once I am able to load the rest of the shapes. Turns out there were only two shapes, the eyes and the rest of the body. So that made that it difficult to try to animate the model. The main lesson I learned from this project was how to implement collision detection and skyboxes.</p>
+      </section>
 
-      <div class="text resources">
-        <h2>Resources</h2>
-        <ul>
-          <li><a href="https://www.models-resource.com/wii/pokeparkwiipikachusadventure/model/2556/"><i class="ion-chevron-right list-icon"></i>Haunter Model</a></li>
-          <li><a href="https://www.models-resource.com/wii/kirbysreturntodreamland/model/4572/"><i class="ion-chevron-right list-icon"></i>Candy Model</a></li>
-          <li><a href="http://tf3dm.com/3d-model/tree-001-2539.html"><i class="ion-chevron-right list-icon"></i>Tree</a></li>
-          <li><a href="http://www.custommapmakers.org/skyboxes.php"><i class="ion-chevron-right list-icon"></i>Skybox textures</a></li>
+      <section class="haunter-resources haunter-info u-center-text">
+        <h2 class="heading-secondary">Resources</h2>
+        <ul class="haunter__list">
+          <li class="haunter__item"><a class="haunter__link" href="https://www.models-resource.com/wii/pokeparkwiipikachusadventure/model/2556/"><i class="ion-chevron-right list-icon"></i>Haunter Model</a></li>
+          <li class="haunter__item"><a class="haunter__link" href="https://www.models-resource.com/wii/kirbysreturntodreamland/model/4572/"><i class="ion-chevron-right list-icon"></i>Candy Model</a></li>
+          <li class="haunter__item"><a class="haunter__link" href="http://tf3dm.com/3d-model/tree-001-2539.html"><i class="ion-chevron-right list-icon"></i>Tree</a></li>
+          <li class="haunter__item"><a class="haunter__link" href="http://www.custommapmakers.org/skyboxes.php"><i class="ion-chevron-right list-icon"></i>Skybox textures</a></li>
         </ul>
-      </div>
-    </section>
-</body>
+      </section>
+    </main>
+  </body>
 </html>

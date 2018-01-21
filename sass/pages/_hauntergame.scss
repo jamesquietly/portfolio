@@ -1,0 +1,44 @@
+.haunter-opening {
+    margin-bottom: 3rem;
+
+    &__img {
+        margin-bottom: 2rem;
+    }
+}
+
+.haunter-info {
+    background-color: $color-grey-dark-2;
+    margin: 0 auto 4rem auto;
+    padding: 1.5rem 0;
+    width: 70%;
+    box-shadow: $shadow-soft;
+}
+
+.haunter {
+    &__paragraph {
+        font-size: $default-font-size;
+        letter-spacing: .05rem;
+        padding: 1.5rem 3.5rem;
+        line-height: 1.2;
+    }
+
+    &__list {
+        list-style: none;
+
+    }
+
+    &__item {
+        font-size: $default-font-size;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+        }
+    }
+}
+
+.list-icon {
+    margin-right: .5rem;
+}

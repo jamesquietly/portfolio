@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/index.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesquietly/portfolio.git"
+  },
+  "author": "James Ly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesquietly/portfolio/issues"
+  },
+  "homepage": "https://github.com/jamesquietly/portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

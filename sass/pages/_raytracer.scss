@@ -1,0 +1,42 @@
+.description {
+    font-size: $default-font-size;
+    &__paragraph {
+        padding: 2rem 6rem;
+        letter-spacing: .05rem;
+        line-height: 1.3;
+    }
+}
+
+.shadow-img {
+    font-size: $default-font-size;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    background-color: $color-grey-dark-2;
+    
+    &__paragraph {
+        padding: 1.5rem 0;
+    }
+}
+
+.other {
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        font-size: $default-font-size;
+    }
+}
+
+.references {
+    margin: 2rem 0;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        font-size: $default-font-size;
+    }
+}
