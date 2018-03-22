@@ -188,7 +188,8 @@ body {
 
 .cp {
   width: 100%;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  color: white; }
   .cp__projects {
     background-color: #777;
     padding: 2rem 0;
@@ -206,22 +207,23 @@ body {
     .cp__item:not(:last-child) {
       margin-right: 3rem; }
 
-.web-dev {
-  width: 100%; }
-  .web-dev__projects {
+.web-dev, .unity {
+  width: 100%;
+  margin-bottom: 6rem; }
+  .web-dev__projects, .unity__projects {
     background-color: #999;
     padding: 2rem 0;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
-  .web-dev__paragraph {
+  .web-dev__paragraph, .unity__paragraph {
     font-size: 1.4rem;
     padding: 1.5rem 4rem;
     border-top: 1px solid #eee; }
-  .web-dev__list {
+  .web-dev__list, .unity__list {
     list-style: none;
     text-align: center; }
-  .web-dev__item {
+  .web-dev__item, .unity__item {
     display: inline-block; }
-    .web-dev__item:not(:last-child) {
+    .web-dev__item:not(:last-child), .unity__item:not(:last-child) {
       margin-right: 3rem; }
 
 .description {
