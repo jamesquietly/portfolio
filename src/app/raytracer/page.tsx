@@ -5,10 +5,15 @@ import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Unstable_Grid2";
+import ListCard from "@/components/ListCard";
+import LinkCard from "@/components/LinkCard";
 
 const RayTracer = () => {
 	return (
 		<Box>
+			<Typography gutterBottom variant="h4">
+				Ray Tracer
+			</Typography>
 			<InfoCard
 				sx={{ mb: 3 }}
 				heading="Description"
@@ -82,14 +87,27 @@ const RayTracer = () => {
 					</Grid>
 				</CardContent>
 			</Card>
-			<InfoCard
+			<ListCard
 				sx={{ mb: 3 }}
 				heading="Other working features"
-				text="Spheres, triangles, planes, boxes, Reflection and Refraction, Monte Carlo Global Illumination, Blinn-Phong and Cook-Torrance Shading, Anti-Aliasing, Transformations"
+				text={[
+					"Spheres, triangles, planes, boxes",
+					"Reflection and Refraction",
+					"Monte Carlo Global Illumination",
+					"Blinn-Phong and Cook-Torrance Shading",
+					"Anti-Aliasing",
+					"Transformations"
+				]}
 			/>
-			<InfoCard
+			<LinkCard
 				heading="References"
-				text="Ian Dunn https://www.cs.unc.edu/~dm/UNC/COMP236/LECTURES/SoftShadows.pdf"
+				links={[
+					{
+						label: "Soft Shadows",
+						href: "https://www.cs.unc.edu/~dm/UNC/COMP236/LECTURES/SoftShadows.pdf"
+					},
+					{ label: "Ian Dunn", href: "" }
+				]}
 			/>
 		</Box>
 	);
