@@ -27,7 +27,7 @@ const RayTracer = () => {
 					<Grid container rowSpacing={3} columnSpacing={3}>
 						<Grid xs={6}>
 							<Image
-								src="/images/simple-gi.png"
+								src="/portfolio/images/simple-gi.png"
 								alt=""
 								width="0"
 								height="0"
@@ -36,7 +36,7 @@ const RayTracer = () => {
 						</Grid>
 						<Grid xs={6}>
 							<Image
-								src="/images/simple-gi-soft.png"
+								src="/portfolio/images/simple-gi-soft.png"
 								alt=""
 								width="0"
 								height="0"
@@ -45,7 +45,7 @@ const RayTracer = () => {
 						</Grid>
 						<Grid xs={6}>
 							<Image
-								src="/images/final_box.png"
+								src="/portfolio/images/final_box.png"
 								alt=""
 								width="0"
 								height="0"
@@ -54,7 +54,7 @@ const RayTracer = () => {
 						</Grid>
 						<Grid xs={6}>
 							<Image
-								src="/images/final_box-soft.png"
+								src="/portfolio/images/final_box-soft.png"
 								alt=""
 								width="0"
 								height="0"
@@ -63,7 +63,7 @@ const RayTracer = () => {
 						</Grid>
 						<Grid xs={6}>
 							<Image
-								src="/images/final_trees.png"
+								src="/portfolio/images/final_trees.png"
 								alt=""
 								width="0"
 								height="0"
@@ -72,7 +72,7 @@ const RayTracer = () => {
 						</Grid>
 						<Grid xs={6}>
 							<Image
-								src="/images/final_trees-soft.png"
+								src="/portfolio/images/final_trees-soft.png"
 								alt=""
 								width="0"
 								height="0"

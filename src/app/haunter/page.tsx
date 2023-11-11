@@ -6,7 +6,7 @@ const Haunter = () => {
 	return (
 		<Box>
 			<Image
-				src="/images/haunter.jpg"
+				src="/portfolio/images/haunter.jpg"
 				alt=""
 				width="0"
 				height="0"
