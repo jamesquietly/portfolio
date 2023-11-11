@@ -15,12 +15,12 @@ const RayTracer = () => {
 				Ray Tracer
 			</Typography>
 			<InfoCard
-				sx={{ mb: 3 }}
+				sx={{ mb: 2 }}
 				heading="Description"
 				text="A ray tracer starts from the camera's point of view and sends rays out into the world to see if it hits anything. If the ray hits something, we can determine the color based on the object's color, material, and reflectiveness. In this ray tracer, our input file is a POV ray file. This type of file contains info about the camera and other objects like geometric shapes. The output of the ray tracer is a static image based on the POV file and command line arguments. For the final addition to the ray tracer, I decided to do soft shadows. The concept is to treat our point lights as an area light in order to send multiple shadow feeler rays with that area light. After getting the color from those samples we can average them to get softer shadows. This program was written in C++ with the GLM library."
 				github="https://github.com/jamesquietly/cpe473/tree/master/prog1"
 			/>
-			<Card>
+			<Card sx={{ mb: 2 }}>
 				<CardContent>
 					<Typography gutterBottom variant="h5">
 						Renders
@@ -88,7 +88,7 @@ const RayTracer = () => {
 				</CardContent>
 			</Card>
 			<ListCard
-				sx={{ mb: 3 }}
+				sx={{ mb: 2 }}
 				heading="Other working features"
 				text={[
 					"Spheres, triangles, planes, boxes",
