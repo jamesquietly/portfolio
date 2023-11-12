@@ -1,9 +1,13 @@
+"use client";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
 import Typography from "@mui/material/Typography";
 import InfoCard from "@/components/InfoCard";
+import { useWindow } from "@/hooks";
 
 export default function HomePage() {
+	const { isMobile } = useWindow();
+	const gridSize = isMobile ? 12 : 6;
 	return (
 		<Box sx={{ display: "flex", flexDirection: "column" }}>
 			<Box marginBottom={2}>
@@ -11,7 +15,7 @@ export default function HomePage() {
 					Cal Poly Projects
 				</Typography>
 				<Grid container rowSpacing={3} columnSpacing={3}>
-					<Grid xs={6}>
+					<Grid xs={gridSize}>
 						<InfoCard
 							heading="Ray Tracer"
 							text="A ray tracer sends rays into the world in order to determine what color each pixel needs to be rendered in our view. This generates a static image based on a POV file input. Written in C++"
@@ -19,14 +23,14 @@ export default function HomePage() {
 							learn="/portfolio/raytracer"
 						/>
 					</Grid>
-					<Grid xs={6}>
+					<Grid xs={gridSize}>
 						<InfoCard
 							heading="Haunter's Candy Hunt"
 							text="A 3D game where you can play as Haunter and collect rare candy. The candy spawns in random locations and there are trees that you can't pass through. Writtern in C++ and OpenGL"
 							learn="/portfolio/haunter"
 						/>
 					</Grid>
-					<Grid xs={6}>
+					<Grid xs={gridSize}>
 						<InfoCard
 							heading="AstroJump"
 							text="A platform jumping game where you must keep jumping upwards on platforms to avoid falling into the rising lava."
@@ -40,7 +44,7 @@ export default function HomePage() {
 					Unity Projects
 				</Typography>
 				<Grid container rowSpacing={3} columnSpacing={3}>
-					<Grid xs={6}>
+					<Grid xs={gridSize}>
 						<InfoCard
 							heading="Laser Defender"
 							text="Shoot down enemy space ships with lasers! Written in C#"
@@ -48,7 +52,7 @@ export default function HomePage() {
 							play="https://jamesquietly.github.io/LaserDefender/"
 						/>
 					</Grid>
-					<Grid xs={6}>
+					<Grid xs={gridSize}>
 						<InfoCard
 							heading="Block Breaker"
 							text="Smash all the blocks by bouncing the ball with a paddle! Written in C#"
@@ -63,7 +67,7 @@ export default function HomePage() {
 					Web Dev Projects
 				</Typography>
 				<Grid container rowSpacing={3} columnSpacing={3}>
-					<Grid xs={6}>
+					<Grid xs={gridSize}>
 						<InfoCard
 							heading="Natours"
 							text="Web site for nature tours with cool animations. Made for a course on Udemy."
@@ -71,7 +75,7 @@ export default function HomePage() {
 							learn="https://jamesquietly.github.io/natours/"
 						/>
 					</Grid>
-					<Grid xs={6}>
+					<Grid xs={gridSize}>
 						<InfoCard
 							heading="Omnifood"
 							text="Responsive web site for a food delivery service. Made for a course on Udemy."
@@ -79,7 +83,7 @@ export default function HomePage() {
 							learn="https://jamesquietly.github.io/omnifood/"
 						/>
 					</Grid>
-					<Grid xs={6}>
+					<Grid xs={gridSize}>
 						<InfoCard
 							heading="Pomodoro Clock"
 							text="Clock that switches between work and break time in order to visualize the pomodoro technique."

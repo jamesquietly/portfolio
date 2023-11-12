@@ -105,19 +105,6 @@ export function AppBarHeader({ drawerWidth }: AppBarHeaderArgs) {
 						</ListItem>
 					))}
 				</List>
-				<Divider sx={{ mt: "auto" }} />
-				<List>
-					{PLACEHOLDER_LINKS.map(({ text, icon: Icon }) => (
-						<ListItem key={text} disablePadding>
-							<ListItemButton>
-								<ListItemIcon>
-									<Icon />
-								</ListItemIcon>
-								<ListItemText primary={text} />
-							</ListItemButton>
-						</ListItem>
-					))}
-				</List>
 			</Drawer>
 		</>
 	);

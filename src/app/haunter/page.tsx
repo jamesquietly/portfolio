@@ -25,8 +25,8 @@ const Haunter = () => {
 			/>
 			<Box mb={2}>
 				<iframe
-					width="560"
-					height="315"
+					width="100%"
+					height="500"
 					src="https://www.youtube.com/embed/ddLDYoN6Kuc"
 				></iframe>
 			</Box>
