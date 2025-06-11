@@ -1,6 +1,6 @@
 {
-  "name": "ts-next-app",
-  "version": "0.1.0",
+  "name": "portfolio",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
