@@ -1,98 +1,108 @@
-"use client";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Unstable_Grid2";
-import Typography from "@mui/material/Typography";
-import InfoCard from "@/components/InfoCard";
-import { useWindow } from "@/hooks";
+import ProjectCard from "@/components/ProjectCard";
+import { Typography } from "@/components/Typography";
+import {
+  CalPolyProjects,
+  UnityProjects,
+  WebProjects,
+} from "@/lib/constants/Project";
+import { Metadata } from "next";
+import { Mail, Github, Linkedin } from "lucide-react";
 
-export default function HomePage() {
-	const { isMobile } = useWindow();
-	const gridSize = isMobile ? 12 : 6;
-	return (
-		<Box sx={{ display: "flex", flexDirection: "column" }}>
-			<Box marginBottom={2}>
-				<Typography variant="h4" component="div" marginBottom={2}>
-					Cal Poly Projects
-				</Typography>
-				<Grid container rowSpacing={3} columnSpacing={3}>
-					<Grid xs={gridSize}>
-						<InfoCard
-							heading="Ray Tracer"
-							text="A ray tracer sends rays into the world in order to determine what color each pixel needs to be rendered in our view. This generates a static image based on a POV file input. Written in C++"
-							github="https://github.com/jamesquietly/cpe473/tree/master/prog1"
-							learn="/portfolio/raytracer"
-						/>
-					</Grid>
-					<Grid xs={gridSize}>
-						<InfoCard
-							heading="Haunter's Candy Hunt"
-							text="A 3D game where you can play as Haunter and collect rare candy. The candy spawns in random locations and there are trees that you can't pass through. Writtern in C++ and OpenGL"
-							learn="/portfolio/haunter"
-						/>
-					</Grid>
-					<Grid xs={gridSize}>
-						<InfoCard
-							heading="AstroJump"
-							text="A platform jumping game where you must keep jumping upwards on platforms to avoid falling into the rising lava."
-							github="https://github.com/jamesquietly/AstroJump"
-						/>
-					</Grid>
-				</Grid>
-			</Box>
-			<Box marginBottom={2}>
-				<Typography variant="h4" component="div" marginBottom={2}>
-					Unity Projects
-				</Typography>
-				<Grid container rowSpacing={3} columnSpacing={3}>
-					<Grid xs={gridSize}>
-						<InfoCard
-							heading="Laser Defender"
-							text="Shoot down enemy space ships with lasers! Written in C#"
-							github="https://github.com/jamesquietly/LaserDefender"
-							play="https://jamesquietly.github.io/LaserDefender/"
-						/>
-					</Grid>
-					<Grid xs={gridSize}>
-						<InfoCard
-							heading="Block Breaker"
-							text="Smash all the blocks by bouncing the ball with a paddle! Written in C#"
-							github="https://github.com/jamesquietly/BlockBreaker"
-							play="https://jamesquietly.github.io/BlockBreaker/"
-						/>
-					</Grid>
-				</Grid>
-			</Box>
-			<Box marginBottom={2}>
-				<Typography variant="h4" component="div" marginBottom={2}>
-					Web Dev Projects
-				</Typography>
-				<Grid container rowSpacing={3} columnSpacing={3}>
-					<Grid xs={gridSize}>
-						<InfoCard
-							heading="Natours"
-							text="Web site for nature tours with cool animations. Made for a course on Udemy."
-							github="https://jamesquietly.github.io/natours/"
-							learn="https://jamesquietly.github.io/natours/"
-						/>
-					</Grid>
-					<Grid xs={gridSize}>
-						<InfoCard
-							heading="Omnifood"
-							text="Responsive web site for a food delivery service. Made for a course on Udemy."
-							github="https://jamesquietly.github.io/omnifood/"
-							learn="https://jamesquietly.github.io/omnifood/"
-						/>
-					</Grid>
-					<Grid xs={gridSize}>
-						<InfoCard
-							heading="Pomodoro Clock"
-							text="Clock that switches between work and break time in order to visualize the pomodoro technique."
-							github="https://github.com/jamesquietly/pomodoro-clock"
-							learn="https://jamesquietly.github.io/pomodoro-clock/"
-						/>
-					</Grid>
-				</Grid>
-			</Box>
-		</Box>
-	);
+export const metadata: Metadata = {
+  title: "My Portfolio | Projects",
+  description: "A showcase of my projects and work",
+};
+
+export default function Home() {
+  return (
+    <main className="container mx-auto px-4 py-8 md:py-12">
+      {/* Header Section */}
+      <section className="text-center mb-16">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+          James Ly
+        </h1>
+        <p className="text-lg text-muted-foreground mb-6">Software Developer</p>
+        <div className="flex justify-center space-x-4">
+          <a
+            href="mailto:jamesquietly@gmail.com"
+            className="p-2 rounded-full hover:bg-muted transition-colors"
+            aria-label="Email"
+          >
+            <Mail className="h-6 w-6 text-foreground/70 hover:text-foreground" />
+          </a>
+          <a
+            href="https://github.com/jamesquietly"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full hover:bg-muted transition-colors"
+            aria-label="GitHub"
+          >
+            <Github className="h-6 w-6 text-foreground/70 hover:text-foreground" />
+          </a>
+          <a
+            href="https://linkedin.com/in/jamesly3"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full hover:bg-muted transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="h-6 w-6 text-foreground/70 hover:text-foreground" />
+          </a>
+        </div>
+      </section>
+
+      <section className="mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+            My Projects
+          </h1>
+          <p className="text-lg text-muted-foreground">
+            A collection of my work and contributions across different domains
+          </p>
+        </div>
+
+        <section className="mb-16">
+          <Typography
+            variant="h2"
+            className="text-2xl font-semibold mb-6 pb-2 border-b"
+          >
+            Cal Poly Projects
+          </Typography>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {CalPolyProjects.map((project) => (
+              <ProjectCard key={project.title} project={project} />
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <Typography
+            variant="h2"
+            className="text-2xl font-semibold mb-6 pb-2 border-b"
+          >
+            Unity Projects
+          </Typography>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {UnityProjects.map((project) => (
+              <ProjectCard key={project.title} project={project} />
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <Typography
+            variant="h2"
+            className="text-2xl font-semibold mb-6 pb-2 border-b"
+          >
+            Web Development
+          </Typography>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {WebProjects.map((project) => (
+              <ProjectCard key={project.title} project={project} />
+            ))}
+          </div>
+        </section>
+      </section>
+    </main>
+  );
 }
