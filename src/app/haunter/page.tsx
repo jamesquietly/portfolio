@@ -17,6 +17,7 @@ import {
   Box,
   BookOpen,
 } from "lucide-react";
+import { BASE_PATH } from "@/lib/constants";
 
 export const metadata = {
   title: "Haunter's Candy Hunt | Project",
@@ -77,7 +78,7 @@ const HaunterPage = () => {
       <div className="max-w-6xl mx-auto">
         <div className="rounded-xl overflow-hidden">
           <Image
-            src="/images/haunter.jpg"
+            src={`${BASE_PATH}/images/haunter.jpg`}
             alt="Haunter's Candy Hunt Game Screenshot"
             width={1920}
             height={1080}
@@ -249,7 +250,7 @@ const HaunterPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="rounded-lg overflow-hidden border">
             <Image
-              src="/images/texture.jpg"
+              src={`${BASE_PATH}/images/texture.jpg`}
               alt="Game Textures"
               width={800}
               height={450}
@@ -261,7 +262,7 @@ const HaunterPage = () => {
           </div>
           <div className="rounded-lg overflow-hidden border">
             <Image
-              src="/images/sky.jpg"
+              src={`${BASE_PATH}/images/sky.jpg`}
               alt="Game Skybox"
               width={800}
               height={450}

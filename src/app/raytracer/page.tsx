@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { ArrowRight, Github } from "lucide-react";
+import { BASE_PATH } from "@/lib/constants/Constants";
 
 const features = [
   "Spheres, triangles, planes, and boxes",
@@ -17,9 +18,18 @@ const features = [
 ];
 
 const imagePairs = [
-  { before: "/images/simple-gi.png", after: "/images/simple-gi-soft.png" },
-  { before: "/images/final_box.png", after: "/images/final_box-soft.png" },
-  { before: "/images/final_trees.png", after: "/images/final_trees-soft.png" },
+  {
+    before: `${BASE_PATH}/images/simple-gi.png`,
+    after: `${BASE_PATH}/images/simple-gi-soft.png`,
+  },
+  {
+    before: `${BASE_PATH}/images/final_box.png`,
+    after: `${BASE_PATH}/images/final_box-soft.png`,
+  },
+  {
+    before: `${BASE_PATH}/images/final_trees.png`,
+    after: `${BASE_PATH}/images/final_trees-soft.png`,
+  },
 ];
 
 const RayTracerPage = () => {
