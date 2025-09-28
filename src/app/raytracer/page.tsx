@@ -1,12 +1,6 @@
 import { Typography } from "@/components/Typography";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { RayTracerProject } from "@/lib/constants/Project";
 import Image from "next/image";
 import Link from "next/link";
@@ -32,12 +26,12 @@ const RayTracerPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/20 flex flex-col items-center">
       {/* Hero Section */}
-      <section className="w-full max-w-7xl py-20 md:py-32 bg-gradient-to-r from-primary/5 to-primary/10">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-6 text-center">
+      <section className="w-full py-20 md:py-32 bg-gradient-to-r from-primary/5 to-primary/10">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
             <Badge
               variant="outline"
-              className="mb-4 text-sm font-medium px-3 py-1"
+              className="text-sm font-medium px-3 py-1 inline-flex"
             >
               Computer Graphics
             </Badge>
@@ -47,21 +41,23 @@ const RayTracerPage = () => {
             >
               Ray Tracer
             </Typography>
-            <Typography className="max-w-[700px] text-muted-foreground md:text-xl">
-              A physically-based ray tracer with global illumination, soft
-              shadows, and more
-            </Typography>
-            <div className="flex flex-col sm:flex-row gap-4 mt-6">
-              <Button asChild size="lg" className="gap-2">
-                <Link
-                  href={RayTracerProject.github || ""}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github className="h-5 w-5" />
-                  View on GitHub
-                </Link>
-              </Button>
+            <div className="space-y-6">
+              <Typography className="mx-auto max-w-2xl text-muted-foreground md:text-xl">
+                A physically-based ray tracer with global illumination, soft
+                shadows, and more
+              </Typography>
+              <div className="flex justify-center">
+                <Button asChild size="lg" className="gap-2">
+                  <Link
+                    href={RayTracerProject.github || ""}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="h-5 w-5" />
+                    View on GitHub
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
