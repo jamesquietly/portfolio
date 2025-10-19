@@ -66,10 +66,10 @@ export default function Home() {
             variant="h2"
             className="text-2xl font-semibold mb-6 pb-2 border-b"
           >
-            Cal Poly Projects
+            Web Development
           </Typography>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {CalPolyProjects.map((project) => (
+            {WebProjects.map((project) => (
               <ProjectCard key={project.title} project={project} />
             ))}
           </div>
@@ -80,10 +80,10 @@ export default function Home() {
             variant="h2"
             className="text-2xl font-semibold mb-6 pb-2 border-b"
           >
-            Unity Projects
+            Cal Poly Projects
           </Typography>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {UnityProjects.map((project) => (
+            {CalPolyProjects.map((project) => (
               <ProjectCard key={project.title} project={project} />
             ))}
           </div>
@@ -94,10 +94,10 @@ export default function Home() {
             variant="h2"
             className="text-2xl font-semibold mb-6 pb-2 border-b"
           >
-            Web Development
+            Unity Projects
           </Typography>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {WebProjects.map((project) => (
+            {UnityProjects.map((project) => (
               <ProjectCard key={project.title} project={project} />
             ))}
           </div>
