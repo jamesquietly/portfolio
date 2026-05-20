@@ -43,7 +43,7 @@ export const UnityProjects: Project[] = [
 export const WebProjects: Project[] = [
   {
     title: "Castle Game",
-    description: "A castle card game built with Next.js and PeerJS.",
+    description: "A multiplayer castle card game built with Next.js and PeerJS.",
     github: "https://github.com/jamesquietly/castle-game",
     learn: "https://jamesquietly.github.io/castle-game/",
   },
