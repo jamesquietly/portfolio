@@ -42,6 +42,19 @@ export const UnityProjects: Project[] = [
 
 export const WebProjects: Project[] = [
   {
+    title: "Castle Game",
+    description: "A castle card game built with Next.js and PeerJS.",
+    github: "https://github.com/jamesquietly/castle-game",
+    learn: "https://jamesquietly.github.io/castle-game/",
+  },
+  {
+    title: "Wordle",
+    description:
+      "Wordle is a svelte web app that allows you to play the popular word guessing game.",
+    github: "https://github.com/jamesquietly/wordle",
+    learn: "https://jamesquietly.github.io/wordle/",
+  },
+  {
     title: "Natours",
     description:
       "Web site for nature tours with cool animations. Made for a course on Udemy.",
@@ -54,12 +67,5 @@ export const WebProjects: Project[] = [
       "Responsive web site for a food delivery service. Made for a course on Udemy.",
     github: "https://github.com/jamesquietly/omnifood",
     learn: "https://jamesquietly.github.io/omnifood/",
-  },
-  {
-    title: "Wordle",
-    description:
-      "Wordle is a web app that allows you to play the popular word guessing game.",
-    github: "https://github.com/jamesquietly/wordle",
-    learn: "https://jamesquietly.github.io/wordle/",
   },
 ];
