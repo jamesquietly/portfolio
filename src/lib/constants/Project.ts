@@ -27,14 +27,15 @@ export const CalPolyProjects: Project[] = [
 export const UnityProjects: Project[] = [
   {
     title: "Laser Defender",
-    description: "Shoot down enemy space ships with lasers! Written in C#",
+    description:
+      "Shoot down enemy space ships with lasers! Project used to learn Unity and C#.",
     github: "https://github.com/jamesquietly/LaserDefender",
     play: "https://jamesquietly.github.io/LaserDefender/",
   },
   {
     title: "Block Breaker",
     description:
-      "Smash all the blocks by bouncing the ball with a paddle! Written in C#",
+      "Smash all the blocks by bouncing the ball with a paddle! Project used to learn Unity and C#.",
     github: "https://github.com/jamesquietly/BlockBreaker",
     play: "https://jamesquietly.github.io/BlockBreaker/",
   },
@@ -43,28 +44,29 @@ export const UnityProjects: Project[] = [
 export const WebProjects: Project[] = [
   {
     title: "Castle Game",
-    description: "A multiplayer castle card game built with Next.js and PeerJS.",
+    description:
+      "A multiplayer castle card game built with Next.js and PeerJS. Project used to learn real time communication with PeerJS and Google Jules.",
     github: "https://github.com/jamesquietly/castle-game",
     learn: "https://jamesquietly.github.io/castle-game/",
   },
   {
     title: "Wordle",
     description:
-      "Wordle is a svelte web app that allows you to play the popular word guessing game.",
+      "Wordle is a svelte web app that allows you to play the popular word guessing game. Project used to learn about Svelte and AI assisted development.",
     github: "https://github.com/jamesquietly/wordle",
     learn: "https://jamesquietly.github.io/wordle/",
   },
   {
     title: "Natours",
     description:
-      "Web site for nature tours with cool animations. Made for a course on Udemy.",
+      "Web site for nature tours with cool animations. Project used to learn about CSS animations.",
     github: "https://github.com/jamesquietly/natours",
     learn: "https://jamesquietly.github.io/natours/",
   },
   {
     title: "Omnifood",
     description:
-      "Responsive web site for a food delivery service. Made for a course on Udemy.",
+      "Responsive web site for a food delivery service. Project used to learn about responsive design.",
     github: "https://github.com/jamesquietly/omnifood",
     learn: "https://jamesquietly.github.io/omnifood/",
   },
