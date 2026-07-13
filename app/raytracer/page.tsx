@@ -1,20 +1,17 @@
-import { Typography } from "@/components/Typography";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { RayTracerProject } from "@/lib/constants/Project";
-import Image from "next/image";
-import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
-import { ArrowRight, Github } from "lucide-react";
-import { BASE_PATH } from "@/lib/constants/Constants";
+import { Button, Card, CardContent, Divider, Typography } from '@mui/material';
+import { RayTracerProject } from '@/src/projects/constants/ProjectList';
+import Image from 'next/image';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
+import { BASE_PATH } from '@/src/lib/constants';
+import { GitHub } from '@mui/icons-material';
 
 const features = [
-  "Spheres, triangles, planes, and boxes",
-  "Reflection and Refraction",
-  "Monte Carlo Global Illumination",
-  "Anti-Aliasing",
-  "Transformations",
+  'Spheres, triangles, planes, and boxes',
+  'Reflection and Refraction',
+  'Monte Carlo Global Illumination',
+  'Anti-Aliasing',
+  'Transformations',
 ];
 
 const imagePairs = [
@@ -34,63 +31,40 @@ const imagePairs = [
 
 const RayTracerPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-muted/20 flex flex-col items-center">
-      {/* Hero Section */}
-      <section className="w-full py-20 md:py-32 bg-gradient-to-r from-primary/5 to-primary/10">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <Badge
-              variant="outline"
-              className="text-sm font-medium px-3 py-1 inline-flex"
-            >
-              Computer Graphics
-            </Badge>
-            <Typography
-              variant="h1"
-              className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
-            >
-              Ray Tracer
-            </Typography>
-            <div className="space-y-6">
-              <Typography className="mx-auto max-w-2xl text-muted-foreground md:text-xl">
-                A physically-based ray tracer with global illumination, soft
-                shadows, and more
-              </Typography>
-              <div className="flex justify-center">
-                <Button asChild size="lg" className="gap-2">
-                  <Link
-                    href={RayTracerProject.github || ""}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github className="h-5 w-5" />
-                    View on GitHub
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="flex flex-col items-center">
+      <section className="flex flex-col items-center mt-8 gap-4">
+        <Typography variant="h2">Ray Tracer</Typography>
+        <Typography variant="h5">
+          A physically-based ray tracer with global illumination, soft shadows,
+          and more
+        </Typography>
+        <Button
+          variant="contained"
+          href={RayTracerProject.github || ''}
+          target="_blank"
+          className="flex items-center gap-2"
+        >
+          <GitHub />
+          GitHub
+        </Button>
       </section>
 
       {/* Main Content */}
       <div className="w-full max-w-7xl px-4 md:px-6 py-12 space-y-12">
         {/* Description Card */}
         <Card className="border-none shadow-lg">
-          <CardHeader>
-            <CardTitle className="text-2xl font-bold">
-              Project Overview
-            </CardTitle>
-            <Separator />
-          </CardHeader>
           <CardContent>
-            <div className="space-y-4 text-muted-foreground">
+            <Typography variant="h4" className="pb-4">
+              Project Overview
+            </Typography>
+            <Divider />
+            <div className="space-y-4 mt-4">
               <p>
                 A ray tracer simulates the way light interacts with virtual
-                objects to create realistic images. Starting from the camera's
-                perspective, it traces rays of light as they travel through a
-                scene, calculating how they interact with different surfaces and
-                materials.
+                objects to create realistic images. Starting from the
+                camera&apos;s perspective, it traces rays of light as they
+                travel through a scene, calculating how they interact with
+                different surfaces and materials.
               </p>
               <p>
                 This implementation processes POV-Ray scene files, supporting
@@ -108,18 +82,13 @@ const RayTracerPage = () => {
         </Card>
 
         {/* Renders Section */}
-        <section className="space-y-6">
+        <section className="gap-6">
           <div className="text-center mb-8">
-            <Typography
-              variant="h2"
-              className="text-3xl font-bold tracking-tight"
-            >
-              Render Showcase
-            </Typography>
-            <p className="text-muted-foreground mt-2">
+            <Typography variant="h3">Render Showcase</Typography>
+            <Typography variant="h6" className="mt-4">
               Comparing standard rendering (left) with soft shadows enabled
               (right)
-            </p>
+            </Typography>
           </div>
 
           <div className="grid gap-8">
@@ -135,9 +104,9 @@ const RayTracerPage = () => {
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
-                  <p className="text-center text-sm text-muted-foreground">
+                  <Typography variant="h6" className="text-center">
                     Standard Rendering
-                  </p>
+                  </Typography>
                 </div>
                 <div className="space-y-2">
                   <div className="relative aspect-video overflow-hidden rounded-lg border bg-background">
@@ -149,9 +118,9 @@ const RayTracerPage = () => {
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
-                  <p className="text-center text-sm text-muted-foreground">
+                  <Typography variant="h6" className="text-center">
                     With Soft Shadows
-                  </p>
+                  </Typography>
                 </div>
               </div>
             ))}
@@ -161,20 +130,15 @@ const RayTracerPage = () => {
         {/* Features Section */}
         <section>
           <Card className="border-none shadow-lg">
-            <CardHeader>
-              <CardTitle className="text-2xl font-bold">
-                Technical Features
-              </CardTitle>
-              <Separator />
-            </CardHeader>
             <CardContent>
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <Typography variant="h6">Technical Features</Typography>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mt-4">
                 {features.map((feature, idx) => (
                   <div key={idx} className="flex items-start space-x-3">
                     <div className="flex-shrink-0 mt-1">
                       <ArrowRight className="h-5 w-5 text-primary" />
                     </div>
-                    <p className="text-muted-foreground">{feature}</p>
+                    <Typography>{feature}</Typography>
                   </div>
                 ))}
               </div>
@@ -185,19 +149,19 @@ const RayTracerPage = () => {
       {/* References Section */}
       <section className="w-full max-w-7xl px-4 md:px-6 py-12">
         <Card className="border-none shadow-lg">
-          <CardHeader>
-            <CardTitle className="text-2xl font-bold">References</CardTitle>
-            <Separator />
-          </CardHeader>
           <CardContent>
-            <div className="space-y-4">
-              <div className="flex items-start gap-4 p-4 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors">
+            <Typography variant="h6" className="pb-4">
+              References
+            </Typography>
+            <Divider />
+            <div>
+              <div className="flex items-start gap-4 p-4">
                 <div className="flex-shrink-0 mt-1">
                   <ArrowRight className="h-5 w-5 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-medium">Soft Shadows Implementation</h3>
-                  <Button variant="outline" size="sm" asChild>
+                  <Button variant="outlined">
                     <Link
                       href="https://www.cs.unc.edu/~dm/UNC/COMP236/LECTURES/SoftShadows.pdf"
                       target="_blank"
@@ -225,7 +189,7 @@ const RayTracerPage = () => {
                   </Button>
                 </div>
               </div>
-              <div className="flex items-start gap-4 p-4 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors">
+              <div className="flex items-start gap-4 p-4">
                 <div className="flex-shrink-0 mt-1">
                   <ArrowRight className="h-5 w-5 text-primary" />
                 </div>
