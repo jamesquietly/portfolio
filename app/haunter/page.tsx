@@ -1,11 +1,6 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
 import Image from "next/image";
+import { BASE_PATH } from "@/src/lib/constants";
+import { Card, CardContent, Typography } from "@mui/material";
 import {
   ArrowUpRight,
   Gamepad2,
@@ -17,7 +12,6 @@ import {
   Box,
   BookOpen,
 } from "lucide-react";
-import { BASE_PATH } from "@/lib/constants";
 
 export const metadata = {
   title: "Haunter's Candy Hunt | Project",
@@ -91,22 +85,20 @@ const HaunterPage = () => {
       {/* Game Overview */}
       <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
         <Card className="hover:shadow-lg transition-shadow">
-          <CardHeader>
+          <CardContent>
             <div className="flex items-center gap-2 mb-2">
               <Gamepad2 className="h-6 w-6 text-purple-500" />
-              <CardTitle>About the Game</CardTitle>
+              <Typography variant="h6">About the Game</Typography>
             </div>
-            <CardDescription>
-              <p className="text-foreground">
+            <div>
+              <p className="text-foreground mb-2">
                 In the Pokémon world, rare candies are hard to come by, but
                 Haunter has discovered a forest full of them! Play as Haunter in
                 this 3D adventure game to collect as many candies as you can
                 while navigating through a mystical forest filled with obstacles
                 and surprises.
               </p>
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
+            </div>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">
                 C++
@@ -122,13 +114,11 @@ const HaunterPage = () => {
         </Card>
 
         <Card className="hover:shadow-lg transition-shadow">
-          <CardHeader>
+          <CardContent className="space-y-2">
             <div className="flex items-center gap-2 mb-2">
               <Move3d className="h-6 w-6 text-blue-500" />
-              <CardTitle>Controls</CardTitle>
+              <Typography variant="h6">Controls</Typography>
             </div>
-          </CardHeader>
-          <CardContent className="space-y-2">
             <div className="flex justify-between items-center p-2 hover:bg-accent/50 rounded-md">
               <span className="text-muted-foreground">Movement</span>
               <span className="font-mono bg-muted px-2 py-1 rounded text-sm">
