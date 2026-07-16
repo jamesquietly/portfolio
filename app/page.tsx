@@ -9,7 +9,7 @@ export default function Home() {
       <main className="container mx-auto px-4 py-8">
         <div className="mb-8 text-center">
           <Typography variant="h2">James Ly</Typography>
-          <Typography variant="h6">Software Developer</Typography>
+          <Typography variant="h6">Software Engineer</Typography>
           <div className="mt-2">
             <IconButton href="mailto:jamesquietly@gmail.com" target="_blank">
               <Email sx={{ fontSize: 50 }} />
